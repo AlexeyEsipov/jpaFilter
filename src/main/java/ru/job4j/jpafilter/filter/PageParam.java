@@ -11,6 +11,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class PageParam {
+
     @Schema(description = "Номер страницы, начиная с 0", example = "1")
     private Integer pageNumber;
 
