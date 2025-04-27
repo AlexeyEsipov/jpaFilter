@@ -24,5 +24,13 @@ pipeline {
                         bat 'mvn.cmd package'  // Для Maven
                     }
                 }
+        post {
+                success {
+                    echo 'Сборка прошла успешно!'
+                }
+                failure {
+                    echo 'Сборка завершилась неудачно.'
+                }
+            }
     }
 }
