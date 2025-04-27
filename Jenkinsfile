@@ -14,7 +14,7 @@ pipeline {
                 sh 'mvn test'  // Для Maven
             }
         }
-        stage('Сборка') {
+        stage('package') {
                     steps {
                         // Команда для запуска тестов
                         sh 'mvn package'  // Для Maven
