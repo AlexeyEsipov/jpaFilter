@@ -9,7 +9,7 @@ pipeline {
         stage('Сборка') {
             steps {
                 // Команда для сборки вашего проекта
-                sh 'mvn.cmd compile'  // Для Maven
+                sh 'mvn compile'  // Для Maven
             }
         }
          stage('Тестирование') {
