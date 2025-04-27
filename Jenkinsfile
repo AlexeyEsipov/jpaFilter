@@ -9,19 +9,19 @@ pipeline {
         stage('Сборка') {
             steps {
                 // Команда для сборки вашего проекта
-                sh 'mvn compile'  // Для Maven
+                bat 'mvn.cmd compile'  // Для Maven
             }
         }
          stage('Тестирование') {
             steps {
                 // Команда для запуска тестов
-                sh 'mvn test'  // Для Maven
+                bat 'mvn.cmd test'  // Для Maven
             }
         }
         stage('package') {
                     steps {
                         // Команда для запуска тестов
-                        sh 'mvn package'  // Для Maven
+                        bat 'mvn.cmd package'  // Для Maven
                     }
                 }
     }
