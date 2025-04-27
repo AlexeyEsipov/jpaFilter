@@ -5,7 +5,7 @@ pipeline {
         stage('Сборка') {
             steps {
                 // Команда для сборки вашего проекта
-                sh 'mvn clean validate compile'  // Для Maven
+                sh 'mvn compile'  // Для Maven
             }
         }
          stage('Тестирование') {
