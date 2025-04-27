@@ -1,11 +1,15 @@
 pipeline {
     agent any  // Использовать любой доступный агент
 
+    tools {
+            maven 'M3'  // Имя Maven-инструмента, настроенного в Jenkins (Global Tool Configuration)
+        }
+
     stages {
         stage('Сборка') {
             steps {
                 // Команда для сборки вашего проекта
-                sh 'mvn compile'  // Для Maven
+                sh 'mvn.cmd compile'  // Для Maven
             }
         }
          stage('Тестирование') {
